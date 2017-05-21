@@ -1,6 +1,7 @@
-$stdout.sync = true
+STDERR.sync = true
+
 loop do
-  puts "Process B running"
-  sleep 5
+  STDERR.puts "Worker process running"
+  sleep 2
 end
 

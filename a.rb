@@ -1,7 +1,9 @@
-$stdout.sync = true
-
 require 'sinatra'
 
 get '/' do
-  "blah"
+  "Web process running"
+end
+
+get '/memory' do
+  `free -m`
 end
