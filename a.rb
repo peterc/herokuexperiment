@@ -1,5 +1,7 @@
 $stdout.sync = true
-loop do
-  puts "Process A running"
-  sleep 5
+
+require 'sinatra'
+
+get '/' do
+  "blah"
 end

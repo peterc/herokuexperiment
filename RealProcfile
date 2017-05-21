@@ -1,3 +1,3 @@
-a: ruby a.rb
+a: ruby a.rb -p $PORT
 b: ruby b.rb
 
