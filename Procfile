@@ -1,2 +1,1 @@
-a: ruby a.rb
-b: ruby b.rb
+web: foreman start -f RealProcfile
