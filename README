@@ -1,0 +1,14 @@
+# Using one Heroku dyno for both web and worker
+
+What you do is make the 'web' entry in the Procfile
+run foreman which then runs a separate Procfile with
+the 'real' entries. This then runs both processes
+under a single dyno.
+
+Things to be aware of:
+
+- if using free dynos, your 'worker' will stop working when the 30 minute idle time is up
+
+- the 'web' worker has to be the first in the secondary procfile otherwise the $PORT number gets incremented by Foreman
+
+License is whatever you like since there's barely anything here.

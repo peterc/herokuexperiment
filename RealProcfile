@@ -1,3 +1,2 @@
-a: ruby a.rb -p $PORT
-b: ruby b.rb
-
+web: ruby a.rb -p $PORT
+worker: ruby b.rb
